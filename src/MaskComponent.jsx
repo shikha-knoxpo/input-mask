@@ -1,12 +1,13 @@
 import React from "react";
-import MaskedInput from "react-text-mask";
+
+import InputMask from "../src/components/InputMask/InputMask";
 
 export const MaskComponent = () => {
   return (
     <>
       <div>
-        <MaskedInput
-          guide={false}
+        <InputMask
+          placeholder="____-_______-_____"
           mask={[
             /[1-9]/,
             /\d/,
